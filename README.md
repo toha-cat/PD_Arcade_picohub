@@ -1,8 +1,10 @@
 PG Arcade picohub
 =================================
 
-Creates two USB-CDC devices.
+Creates two USB-CDC devices:
+
 The first creates a bridge with UART.
+
 The second disassembles the commands for controlling the LEDs. Works in conjunction with the [PD-Arcade-Lights plugin](https://github.com/COM14/PD-Arcade-Lights)
 
 Raspberry Pi Pico Pinout
@@ -12,7 +14,7 @@ Raspberry Pi Pico Pinout
 |:----------------------:|:--------:|
 | GPIO16 (Pin 21)        | UART0 TX |
 | GPIO17 (Pin 22)        | UART0 RX |
-|:----------------------:|:--------:|
+|  --------------------  |  ------  |
 | GPIO4 (Pin 2)          | BTN1 LED |
 | GPIO5 (Pin 3)          | BTN2 LED |
 | GPIO5 (Pin 4)          | BTN3 LED |
