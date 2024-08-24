@@ -1,6 +1,8 @@
 PG Arcade picohub
 =================================
 
+Firmware for Raspberry Pi Pico
+
 Creates two USB-CDC devices:
 
 The first creates a bridge with UART.
