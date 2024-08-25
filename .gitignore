@@ -1,3 +1,12 @@
 build/*
 CMakeFiles/*
 CMakeCache.txt
+generated/*
+pico-sdk/*
+pioasm/*
+pioasm-install/*
+cmake_install.cmake
+_deps/*
+compile_commands.json
+build.ninja
+pico_flash_region.ld
