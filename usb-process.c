@@ -11,7 +11,6 @@
 #define USB_CDC_LED_N 1
 
 uint8_t usbLedBuffer[BUFFER_SIZE];
-uint32_t usbLedBuffPos;
 
 void usbReadBytesToUart()
 {
@@ -19,11 +18,10 @@ void usbReadBytesToUart()
 
 	if (len && mutex_try_enter(&uartDataStor.usbMtx, NULL)) {
 
+		// if all the data is not placed in the buffer, then we take only a part
 		len = MIN(len, BUFFER_SIZE - uartDataStor.usbPos);
 		if (len) {
-			uint32_t count;
-
-			count = tud_cdc_n_read(USB_CDC_UART_N, &uartDataStor.usbBuffer[uartDataStor.usbPos], len);
+			uint32_t count = tud_cdc_n_read(USB_CDC_UART_N, &uartDataStor.usbBuffer[uartDataStor.usbPos], len);
 			uartDataStor.usbPos += count;
 		}
 
@@ -34,13 +32,14 @@ void usbReadBytesToUart()
 void usbWriteBytesFromUart()
 {
 	if (uartDataStor.uartPos && mutex_try_enter(&uartDataStor.uartMtx, NULL)) {
-		uint32_t count;
-
-		count = tud_cdc_n_write(USB_CDC_UART_N, uartDataStor.uartBuffer, uartDataStor.uartPos);
-		if (count < uartDataStor.uartPos){
-			memmove(uartDataStor.uartBuffer, &uartDataStor.uartBuffer[count], uartDataStor.uartPos - count);
-		}
+		
+		uint32_t count = tud_cdc_n_write(USB_CDC_UART_N, uartDataStor.uartBuffer, uartDataStor.uartPos);
+		
 		uartDataStor.uartPos -= count;
+		// if not all data is sent, then the remainder is transferred to the beginning of the buffer
+		if (uartDataStor.uartPos > 0){
+			memmove(uartDataStor.uartBuffer, &uartDataStor.uartBuffer[count], uartDataStor.uartPos);
+		}
 
 		mutex_exit(&uartDataStor.uartMtx);
 
@@ -65,16 +64,10 @@ void usbCdcToUartProcess()
 void usbCdcToLedProcess()
 {
 	uint32_t len = tud_cdc_n_available(USB_CDC_LED_N);
-
 	if (len) {
-		len = MIN(len, BUFFER_SIZE - usbLedBuffPos);
-		if (len) {
-			uint32_t count = tud_cdc_n_read(USB_CDC_UART_N, usbLedBuffer, len);
-			usbLedBuffPos += count;
-		}
-		ledInsertData(usbLedBuffer, len);
+		uint32_t count = tud_cdc_n_read(USB_CDC_LED_N, usbLedBuffer, len);
+		ledInsertData(usbLedBuffer, count);
 	}
-
 }
 
 void usbProcessing(void)
@@ -82,7 +75,6 @@ void usbProcessing(void)
 	tusb_init();
 
 	while (1) {
-		int itf;
 		int con = 0;
 
 		tud_task();

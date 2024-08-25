@@ -9,8 +9,6 @@
 
 int main(void)
 {
-	int itf;
-
 	usbd_serial_init();
 
 	// init UART
