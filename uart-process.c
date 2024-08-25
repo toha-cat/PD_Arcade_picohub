@@ -10,7 +10,7 @@
 #define UART_RX_PIN 17
 
 
-uart_inst_t *const uartInst;
+uart_inst_t *const uartInst = uart0;
 
 uart_data_t uartDataStor;
 
