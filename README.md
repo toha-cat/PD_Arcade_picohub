@@ -17,16 +17,16 @@ Raspberry Pi Pico Pinout
 | GPIO16 (Pin 21)        | UART0 TX |
 | GPIO17 (Pin 22)        | UART0 RX |
 |  --------------------  |  ------  |
-| GPIO2 (Pin 4)          | BTN1 LED |
-| GPIO3 (Pin 5)          | BTN2 LED |
-| GPIO4 (Pin 6)          | BTN3 LED |
-| GPIO5 (Pin 7)          | BTN4 LED |
-| GPIO6 (Pin 9)          | L LINE R |
-| GPIO7 (Pin 10)         | L LINE G |
-| GPIO8 (Pin 11)         | L LINE B |
-| GPIO9 (Pin 12)         | R LINE R |
-| GPIO10 (Pin 14)        | R LINE G |
-| GPIO11 (Pin 15)        | R LINE B |
+| GPIO5 (Pin 7)          | BTN1 LED |
+| GPIO4 (Pin 6)          | BTN2 LED |
+| GPIO3 (Pin 5)          | BTN3 LED |
+| GPIO2 (Pin 4)          | BTN4 LED |
+| GPIO10 (Pin 14)        | L LINE R |
+| GPIO11 (Pin 15)        | L LINE G |
+| GPIO9 (Pin 12)         | L LINE B |
+| GPIO7 (Pin 10)         | R LINE R |
+| GPIO8 (Pin 11)         | R LINE G |
+| GPIO6 (Pin 9)          | R LINE B |
 
 Disclaimer
 ----------
