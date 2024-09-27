@@ -7,7 +7,7 @@ Creates two USB-CDC devices:
 
 The first creates a bridge with UART.
 
-The second disassembles the commands for controlling the LEDs. Works in conjunction with the [PD-Arcade-Lights plugin](https://github.com/COM14/PD-Arcade-Lights)
+The second disassembles the commands for controlling the LEDs. Works in conjunction with the [PD-Arcade-Lights plugin](https://github.com/steelpuxnastik/PD-Arcade-Lights)
 
 Raspberry Pi Pico Pinout
 ------------------------
