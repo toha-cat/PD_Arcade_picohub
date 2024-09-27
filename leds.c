@@ -28,47 +28,37 @@ uint arcadeLeds[ARCADE_COUNT_LED] = {
 
 #define LED_CONN_STAT 25
 
+void ledSlidesUpdate(uint8_t inData) 
+{
+    gpio_put(ARCADE_LED_R1, (inData & 0b00000001));
+    gpio_put(ARCADE_LED_G1, (inData & 0b00000010));
+    gpio_put(ARCADE_LED_B1, (inData & 0b00000100));
 
-#define LED_SYNC_CODE 0xff
-#define ledDataSize 3
-uint8_t ledDataIteration = 0;
-uint8_t ledData[ledDataSize];
-
-inline void ledDataClear() {
-    ledDataIteration = 0;
-    ledData[0] = 0;
+    gpio_put(ARCADE_LED_R2, (inData & 0b00001000));
+    gpio_put(ARCADE_LED_G2, (inData & 0b00010000));
+    gpio_put(ARCADE_LED_B2, (inData & 0b00100000));
 }
 
-void ledUpdate() {
-    //BUTTONS 
-    gpio_put(ARCADE_LED_BTN1, (ledData[1] & 0b00000001));
-    gpio_put(ARCADE_LED_BTN2, (ledData[1] & 0b00000010));
-    gpio_put(ARCADE_LED_BTN3, (ledData[1] & 0b00000100));
-    gpio_put(ARCADE_LED_BTN4, (ledData[1] & 0b00001000));
-
-    //SIDES
-    gpio_put(ARCADE_LED_R1, (ledData[2] & 0b00000001));
-    gpio_put(ARCADE_LED_G1, (ledData[2] & 0b00000010));
-    gpio_put(ARCADE_LED_B1, (ledData[2] & 0b00000100));
-
-    gpio_put(ARCADE_LED_R2, (ledData[2] & 0b00001000));
-    gpio_put(ARCADE_LED_G2, (ledData[2] & 0b00010000));
-    gpio_put(ARCADE_LED_B2, (ledData[2] & 0b00100000));
-      
-    ledDataClear();
+void ledBtnsUpdate(uint8_t inData) 
+{
+    gpio_put(ARCADE_LED_BTN1, (inData & 0b00000001));
+    gpio_put(ARCADE_LED_BTN2, (inData & 0b00000010));
+    gpio_put(ARCADE_LED_BTN3, (inData & 0b00000100));
+    gpio_put(ARCADE_LED_BTN4, (inData & 0b00001000));
 }
 
 void ledInsertData(uint8_t *data, int32_t len)
 {
     for (uint i = 0; i < len; i++)
 	{
-		ledData[ledDataIteration] = data[i];
-		ledDataIteration++;
-		if(ledDataIteration > 2){
-			ledUpdate();
-		}
-		if(ledData[0] != LED_SYNC_CODE){
-			ledDataClear();
+		uint8_t typeData = data[i] & 0b11000000;
+		switch(typeData){
+		case 0b00000000:
+			ledSlidesUpdate(data[i]);
+			break;
+		case 0b11000000:
+			ledBtnsUpdate(data[i]);
+			break;
 		}
 	}
 }
