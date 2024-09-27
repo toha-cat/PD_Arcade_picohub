@@ -93,21 +93,28 @@ void uartIrqHandler(void)
 // send date from uartDataStor buffer to uart
 void uartWriteBytes()
 {
-	if (uartDataStor.usbPos && mutex_try_enter(&uartDataStor.usbMtx, NULL)) {
-		uint32_t count = 0;
-
-		while (uart_is_writable(uartInst) && count < uartDataStor.usbPos) {
-			uart_putc_raw(uartInst, uartDataStor.usbBuffer[count]);
-			count++;
-		}
-
-		if (count < uartDataStor.usbPos){
-			memmove(uartDataStor.usbBuffer, &uartDataStor.usbBuffer[count], uartDataStor.usbPos - count);
-		}
-		uartDataStor.usbPos -= count;
-
-		mutex_exit(&uartDataStor.usbMtx);
+	if(uartDataStor.usbPos == 0){
+		// no data
+		return;
 	}
+	if (!mutex_try_enter(&uartDataStor.usbMtx, NULL)) {
+		// error crete mutex
+		return;
+	}
+		
+	uint32_t count = 0;
+	// send data to uart
+	while (uart_is_writable(uartInst) && count < uartDataStor.usbPos) {
+		uart_putc_raw(uartInst, uartDataStor.usbBuffer[count]);
+		count++;
+	}
+	uartDataStor.usbPos -= count;
+	// if data remains, we move it to the beginning of the buffer
+	if (uartDataStor.usbPos > 0){
+		memmove(uartDataStor.usbBuffer, &uartDataStor.usbBuffer[count], uartDataStor.usbPos);
+	}
+
+	mutex_exit(&uartDataStor.usbMtx);
 }
 
 // init uart data storage
