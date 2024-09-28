@@ -38,6 +38,7 @@ add_executable(
           usb-descriptors.c
           leds.c
           uart-process.c
+          usb-gamepad.c
           usb-process.c
         )
 

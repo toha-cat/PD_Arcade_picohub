@@ -13,8 +13,12 @@
 #define CFG_TUSB_RHPORT0_MODE OPT_MODE_DEVICE
 
 #define CFG_TUD_CDC 2
+#define CFG_TUD_HID 1
+
 #define CFG_TUD_CDC_RX_BUFSIZE 1024
 #define CFG_TUD_CDC_TX_BUFSIZE 1024
+
+#define CFG_TUD_HID_EP_BUFSIZE 16
 
 void usbd_serial_init(void);
 

@@ -1,6 +1,7 @@
 #include "usb-process.h"
 #include "tusb_config.h"
 #include "leds.h"
+#include "usb-gamepad.h"
 
 
 #ifndef MIN
@@ -115,6 +116,8 @@ void usbProcessing(void)
 			con = 1;
 			usbCdcToLedProcess();
 		}
+
+		gamepadTask();
 
 		ledSetStatus(con);
 	}
