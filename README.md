@@ -3,11 +3,13 @@ PG Arcade picohub
 
 Firmware for Raspberry Pi Pico
 
-Creates two USB-CDC devices:
+Creates two USB-CDC and one HID devices:
 
 The first creates a bridge with UART.
 
 The second disassembles the commands for controlling the LEDs. Works in conjunction with the [PD-Arcade-Lights plugin](https://github.com/steelpuxnastik/PD-Arcade-Lights)
+
+HID GamePad for 5 buttons
 
 Raspberry Pi Pico Pinout
 ------------------------
@@ -27,6 +29,12 @@ Raspberry Pi Pico Pinout
 | GPIO7 (Pin 10)         | R LINE R |
 | GPIO8 (Pin 11)         | R LINE G |
 | GPIO6 (Pin 9)          | R LINE B |
+|  --------------------  |  ------  |
+| GPIO18 (Pin 24)        |  BTN 1   |
+| GPIO19 (Pin 25)        |  BTN 2   |
+| GPIO20 (Pin 26)        |  BTN 3   |
+| GPIO21 (Pin 27)        |  BTN 4   |
+| GPIO22 (Pin 29)        |  BTN 5   |
 
 Disclaimer
 ----------
