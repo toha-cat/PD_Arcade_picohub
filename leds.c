@@ -28,23 +28,28 @@ uint arcadeLeds[ARCADE_COUNT_LED] = {
 
 #define LED_CONN_STAT 25
 
+inline uint readBite(uint data, uint nBite)
+{
+	return (data >> nBite) & 0b00000001;
+}
+
 void ledSlidesUpdate(uint8_t inData) 
 {
-    gpio_put(ARCADE_LED_R1, (inData & 0b00000001));
-    gpio_put(ARCADE_LED_G1, (inData & 0b00000010));
-    gpio_put(ARCADE_LED_B1, (inData & 0b00000100));
+    gpio_put(ARCADE_LED_R1, readBite(inData, 0));
+    gpio_put(ARCADE_LED_G1, readBite(inData, 1));
+    gpio_put(ARCADE_LED_B1, readBite(inData, 2));
 
-    gpio_put(ARCADE_LED_R2, (inData & 0b00001000));
-    gpio_put(ARCADE_LED_G2, (inData & 0b00010000));
-    gpio_put(ARCADE_LED_B2, (inData & 0b00100000));
+    gpio_put(ARCADE_LED_R2, readBite(inData, 3));
+    gpio_put(ARCADE_LED_G2, readBite(inData, 4));
+    gpio_put(ARCADE_LED_B2, readBite(inData, 5));
 }
 
 void ledBtnsUpdate(uint8_t inData) 
 {
-    gpio_put(ARCADE_LED_BTN1, (inData & 0b00000001));
-    gpio_put(ARCADE_LED_BTN2, (inData & 0b00000010));
-    gpio_put(ARCADE_LED_BTN3, (inData & 0b00000100));
-    gpio_put(ARCADE_LED_BTN4, (inData & 0b00001000));
+    gpio_put(ARCADE_LED_BTN1, readBite(inData, 0));
+    gpio_put(ARCADE_LED_BTN2, readBite(inData, 1));
+    gpio_put(ARCADE_LED_BTN3, readBite(inData, 2));
+    gpio_put(ARCADE_LED_BTN4, readBite(inData, 3));
 }
 
 void ledInsertData(uint8_t *data, int32_t len)
