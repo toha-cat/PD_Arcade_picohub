@@ -2,6 +2,7 @@
 #include <tusb.h>
 #include "tusb_config.h"
 #include "pico/time.h"
+#include "bsp/board.h"
 
 // Button pins
 #define BUTTON_PIN_1 18
@@ -41,11 +42,11 @@ void initGamepadGpios() {
     gpio_set_dir(BUTTON_PIN_5, GPIO_IN);
     gpio_pull_up(BUTTON_PIN_5);
 }
-
+/*
 uint32_t board_millis(void) {
     return to_ms_since_boot(get_absolute_time());
 }
-
+*/
 void gamepadTask() {
 
     const uint32_t interval_ms = 1;
