@@ -1,15 +1,24 @@
 #include "usb-gamepad.h"
 #include <tusb.h>
 #include "tusb_config.h"
+#include "pico/time.h"
 
-// Налаштування пінів для кнопок
+// Button pins
 #define BUTTON_PIN_1 18
 #define BUTTON_PIN_2 19
 #define BUTTON_PIN_3 20
 #define BUTTON_PIN_4 21
 #define BUTTON_PIN_5 22
 
-hid_gamepad_report_t gamepadReport = {0};
+typedef struct __attribute__((packed)) {
+    uint8_t buttons;
+    int8_t x;
+    int8_t y;
+    int8_t z;
+    int8_t rx;
+} hid_gamepad_report_win_t;
+
+hid_gamepad_report_win_t gamepadReport = {0};
 
 void initGamepadGpios() {
     gpio_init(BUTTON_PIN_1);
@@ -33,13 +42,29 @@ void initGamepadGpios() {
     gpio_pull_up(BUTTON_PIN_5);
 }
 
+uint32_t board_millis(void) {
+    return to_ms_since_boot(get_absolute_time());
+}
+
 void gamepadTask() {
+
+    const uint32_t interval_ms = 1;
+    static uint32_t start_ms = 0;
+
+    if (board_millis() - start_ms < interval_ms) return;  // not enough time
+    start_ms += interval_ms;
+
     gamepadReport.buttons = 0;
     if (!gpio_get(BUTTON_PIN_1)) gamepadReport.buttons |= (1 << 0);
     if (!gpio_get(BUTTON_PIN_2)) gamepadReport.buttons |= (1 << 1);
     if (!gpio_get(BUTTON_PIN_3)) gamepadReport.buttons |= (1 << 2);
     if (!gpio_get(BUTTON_PIN_4)) gamepadReport.buttons |= (1 << 3);
     if (!gpio_get(BUTTON_PIN_5)) gamepadReport.buttons |= (1 << 4);
+
+    gamepadReport.x = 0;
+    gamepadReport.y = 0;
+    gamepadReport.z = 0;
+    gamepadReport.rx = 0;
 
     if (tud_hid_ready()) {
         tud_hid_report(0, &gamepadReport, sizeof(gamepadReport));

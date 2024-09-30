@@ -58,6 +58,7 @@ target_link_libraries(
           tinyusb_board
           pico_unique_id 
           hardware_uart
+          hardware_timer
         )
 
 # Add the standard include files to the build
