@@ -1,40 +1,46 @@
 PG Arcade picohub
 =================================
 
-Firmware for Raspberry Pi Pico
+Firmware for Raspberry Pi Pico for use in Hatsune Miku Project DIVA Arcade Future Tone DIY-arcade controller 
 
 Creates two USB-CDC and one HID devices:
 
-The first creates a bridge with UART.
+The first creates UART-bridge for connection [LKP](https://github.com/Project-Alpaca/LKP)-Slider with [LKP-Serial](https://github.com/Project-Alpaca/LKP-FW) firmware.
 
 The second disassembles the commands for controlling the LEDs. Works in conjunction with the [PD-Arcade-Lights plugin](https://github.com/steelpuxnastik/PD-Arcade-Lights)
 
-HID GamePad for 5 buttons
+HID-Gamepad for 5 buttons.
 
 Raspberry Pi Pico Pinout
 ------------------------
 
 | Raspberry Pi Pico GPIO | Function |
-|:----------------------:|:--------:|
+|-------------|-------------|
+| 			[LKP-Slider](https://github.com/Project-Alpaca/LKP) connection				|
+|-------------|-------------|
 | GPIO16 (Pin 21)        | UART0 TX |
 | GPIO17 (Pin 22)        | UART0 RX |
-|  --------------------  |  ------  |
-| GPIO5 (Pin 7)          | BTN1 LED |
-| GPIO4 (Pin 6)          | BTN2 LED |
-| GPIO3 (Pin 5)          | BTN3 LED |
-| GPIO2 (Pin 4)          | BTN4 LED |
-| GPIO10 (Pin 14)        | L LINE R |
-| GPIO11 (Pin 15)        | L LINE G |
-| GPIO9 (Pin 12)         | L LINE B |
-| GPIO7 (Pin 10)         | R LINE R |
-| GPIO8 (Pin 11)         | R LINE G |
-| GPIO6 (Pin 9)          | R LINE B |
-|  --------------------  |  ------  |
-| GPIO18 (Pin 24)        |  BTN 1   |
-| GPIO19 (Pin 25)        |  BTN 2   |
-| GPIO20 (Pin 26)        |  BTN 3   |
-| GPIO21 (Pin 27)        |  BTN 4   |
-| GPIO22 (Pin 29)        |  BTN 5   |
+|-------------|-------------|
+| LEDs      |
+|-------------|-------------|
+| GPIO2 (Pin 4)          | BTN4 ![Circle](/images/circle.png) LED (Circle) |
+| GPIO3 (Pin 5)          | BTN3 ![Cross](/images/cross.png) LED (Cross) |
+| GPIO4 (Pin 6)          | BTN2 ![Square](/images/square.png) LED (Square) |
+| GPIO5 (Pin 7)          | BTN1 ![Triangle](/images/triangle.png) LED (Triagle) |
+| GPIO6 (Pin 9)          | R LINE B (RGB LED strip)|
+| GPIO7 (Pin 10)         | R LINE R (RGB LED strip)|
+| GPIO8 (Pin 11)         | R LINE G (RGB LED strip)|
+| GPIO9 (Pin 12)         | L LINE B (RGB LED strip)|
+| GPIO10 (Pin 14)        | L LINE R (RGB LED strip)|
+| GPIO11 (Pin 15)        | L LINE G (RGB LED strip)|
+|-------------			|-------------|
+| 			Controls	 			|
+|-------------			|-------------|
+| GPIO18 (Pin 24)        |  BTN 1 ![Triangle](/images/triangle.png) (Triagle) |
+| GPIO19 (Pin 25)        |  BTN 2 ![Square](/images/square.png) (Square) |
+| GPIO20 (Pin 26)        |  BTN 3 ![Cross](/images/cross.png) (Cross) |
+| GPIO21 (Pin 27)        |  BTN 4 ![Circle](/images/circle.png) (Circle) |
+| GPIO22 (Pin 29)        |  BTN 5 (Start)  |
 
 Disclaimer
 ----------
