@@ -1,4 +1,4 @@
-PG Arcade picohub
+PD Arcade picohub
 =================================
 
 Firmware for Raspberry Pi Pico for use in Hatsune Miku Project DIVA Arcade Future Tone DIY-arcade controller 
@@ -26,7 +26,7 @@ Raspberry Pi Pico Pinout
 | GPIO2 (Pin 4)          | BTN4 ![Circle](/images/circle.png) LED (Circle) |
 | GPIO3 (Pin 5)          | BTN3 ![Cross](/images/cross.png) LED (Cross) |
 | GPIO4 (Pin 6)          | BTN2 ![Square](/images/square.png) LED (Square) |
-| GPIO5 (Pin 7)          | BTN1 ![Triangle](/images/triangle.png) LED (Triagle) |
+| GPIO5 (Pin 7)          | BTN1 ![Triangle](/images/triangle.png) LED (Triangle) |
 | GPIO6 (Pin 9)          | R LINE B (RGB LED strip)|
 | GPIO7 (Pin 10)         | R LINE R (RGB LED strip)|
 | GPIO8 (Pin 11)         | R LINE G (RGB LED strip)|
@@ -36,7 +36,7 @@ Raspberry Pi Pico Pinout
 |-------------			|-------------|
 | 			Controls	 			|
 |-------------			|-------------|
-| GPIO18 (Pin 24)        |  BTN 1 ![Triangle](/images/triangle.png) (Triagle) |
+| GPIO18 (Pin 24)        |  BTN 1 ![Triangle](/images/triangle.png) (Triangle) |
 | GPIO19 (Pin 25)        |  BTN 2 ![Square](/images/square.png) (Square) |
 | GPIO20 (Pin 26)        |  BTN 3 ![Cross](/images/cross.png) (Cross) |
 | GPIO21 (Pin 27)        |  BTN 4 ![Circle](/images/circle.png) (Circle) |
