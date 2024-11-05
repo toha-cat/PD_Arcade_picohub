@@ -33,6 +33,7 @@ Raspberry Pi Pico Pinout
 | GPIO9 (Pin 12)         | L LINE B (RGB LED strip)|
 | GPIO10 (Pin 14)        | L LINE R (RGB LED strip)|
 | GPIO11 (Pin 15)        | L LINE G (RGB LED strip)|
+| GPIO15 (Pin 20)        | LED brightness PWM sygnal source|
 |-------------			|-------------|
 | 			Controls	 			|
 |-------------			|-------------|
