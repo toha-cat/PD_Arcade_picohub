@@ -43,7 +43,7 @@ add_executable(
         )
 
 pico_set_program_name(PD_Arcade_picohub "PD_Arcade_picohub")
-pico_set_program_version(PD_Arcade_picohub "0.1")
+pico_set_program_version(PD_Arcade_picohub "1.0")
 
 # Modify the below lines to enable/disable output over UART/USB
 pico_enable_stdio_uart(PD_Arcade_picohub 0)
@@ -59,6 +59,7 @@ target_link_libraries(
           pico_unique_id 
           hardware_uart
           hardware_timer
+          hardware_pwm
         )
 
 # Add the standard include files to the build
