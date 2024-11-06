@@ -1,4 +1,6 @@
 #include "leds.h"
+#include "hardware/pwm.h"
+#include "hardware/gpio.h"
 
 // GPIO number (not pins)
 #define ARCADE_LED_BTN1 5  // BUTTON LED TRIANGLE
@@ -11,6 +13,9 @@
 #define ARCADE_LED_R2 7  // RIGHT PARTITION LED RED
 #define ARCADE_LED_G2 8 // RIGHT PARTITION LED GREEN
 #define ARCADE_LED_B2 6 // RIGHT PARTITION LED BLUE
+
+#define ARCADE_LED_PWM_PIN 15 // PWM out pin for brightness
+#define ARCADE_LED_PWM_WRAP 12500
 
 #define ARCADE_COUNT_LED 10
 uint arcadeLeds[ARCADE_COUNT_LED] = {
@@ -52,6 +57,23 @@ void ledBtnsUpdate(uint8_t inData)
     gpio_put(ARCADE_LED_BTN4, readBite(inData, 3));
 }
 
+void ledBrightnessUpdate(uint8_t inData) 
+{
+	const int maxInputValue = 50;
+    uint16_t levelPer = inData & 0b00111111;
+
+	if(levelPer > maxInputValue){
+		levelPer = maxInputValue;
+	}
+
+	uint slice_num = pwm_gpio_to_slice_num(ARCADE_LED_PWM_PIN);
+    uint chan = pwm_gpio_to_channel(ARCADE_LED_PWM_PIN);
+
+	uint16_t level = levelPer * ARCADE_LED_PWM_WRAP / maxInputValue;
+    pwm_set_chan_level(slice_num, chan, level);
+
+}
+
 void ledInsertData(uint8_t *data, int32_t len)
 {
     for (uint i = 0; i < len; i++)
@@ -64,6 +86,10 @@ void ledInsertData(uint8_t *data, int32_t len)
 		case 0b11000000:
 			ledBtnsUpdate(data[i]);
 			break;
+		case 0b01000000:
+			// set brightness
+			ledBrightnessUpdate(data[i]);
+			break;
 		}
 	}
 }
@@ -71,6 +97,23 @@ void ledInsertData(uint8_t *data, int32_t len)
 void ledSetStatus(int stat)
 {
     gpio_put(LED_CONN_STAT, stat);
+}
+
+void initLedPwm(void) {
+    // set GPIO to PWM
+    gpio_set_function(ARCADE_LED_PWM_PIN, GPIO_FUNC_PWM);
+    
+    // get slice/channel for GPIO
+    uint slice_num = pwm_gpio_to_slice_num(ARCADE_LED_PWM_PIN);
+    uint chan = pwm_gpio_to_channel(ARCADE_LED_PWM_PIN);
+    
+    // setup PWM
+    pwm_config config = pwm_get_default_config();
+    pwm_config_set_wrap(&config,  ARCADE_LED_PWM_WRAP);
+    pwm_init(slice_num, &config, true);
+    
+    // set the initial level to 100%
+    pwm_set_chan_level(slice_num, chan,  ARCADE_LED_PWM_WRAP);
 }
 
 void initLedGpios()
@@ -83,4 +126,6 @@ void initLedGpios()
 		gpio_init(arcadeLeds[i]);
 		gpio_set_dir(arcadeLeds[i], GPIO_OUT);
 	}
+
+	initLedPwm();
 }
