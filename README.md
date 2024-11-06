@@ -1,4 +1,4 @@
-PD Arcade picohub
+# PD Arcade picohub
 =================================
 
 Firmware for Raspberry Pi Pico for use in Hatsune Miku Project DIVA Arcade Future Tone DIY-arcade controller 
@@ -11,7 +11,7 @@ The second disassembles the commands for controlling the LEDs. Works in conjunct
 
 HID-Gamepad for 5 buttons.
 
-Raspberry Pi Pico Pinout
+## Raspberry Pi Pico pin mapping
 ------------------------
 
 | Raspberry Pi Pico GPIO | Function |
@@ -43,7 +43,7 @@ Raspberry Pi Pico Pinout
 | GPIO21 (Pin 27)        |  BTN 4 ![Circle](/images/circle.png) (Circle) |
 | GPIO22 (Pin 29)        |  BTN 5 (Start)  |
 
-Disclaimer
+## Disclaimer
 ----------
 
 This software is provided without warranty, according to the MIT License, and should therefore not be used where it may endanger life, financial stakes, or cause discomfort and inconvenience to others.

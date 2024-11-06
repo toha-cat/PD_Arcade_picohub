@@ -1873,7 +1873,7 @@
     (pin "1" (uuid 795bf497-06ce-4453-af71-32de983eb558))
     (pin "2" (uuid 359a6c7a-70e7-4a06-8f5d-7991d7e20b51))
     (instances
-      (project "divapicoonly_uart_gamepad_board"
+      (project "PD_Arcade_picohub_board"
         (path "/07e2c1ee-0df3-4731-a138-2d4ed34e257e"
           (reference "JP1") (unit 1)
         )
@@ -1898,7 +1898,7 @@
     )
     (pin "1" (uuid ecb7f695-6360-47cd-92e2-210c3b704446))
     (instances
-      (project "divapicoonly_uart_gamepad_board"
+      (project "PD_Arcade_picohub_board"
         (path "/07e2c1ee-0df3-4731-a138-2d4ed34e257e"
           (reference "#PWR0106") (unit 1)
         )
@@ -1928,7 +1928,7 @@
     )
     (pin "1" (uuid ed1d5554-96f9-46aa-8d43-51298cd63481))
     (instances
-      (project "divapicoonly_uart_gamepad_board"
+      (project "PD_Arcade_picohub_board"
         (path "/07e2c1ee-0df3-4731-a138-2d4ed34e257e"
           (reference "#PWR0116") (unit 1)
         )
@@ -1958,7 +1958,7 @@
     )
     (pin "1" (uuid 3fe7cf92-2d80-4e4e-9bc4-ace09340080d))
     (instances
-      (project "divapicoonly_uart_gamepad_board"
+      (project "PD_Arcade_picohub_board"
         (path "/07e2c1ee-0df3-4731-a138-2d4ed34e257e"
           (reference "#PWR0119") (unit 1)
         )
@@ -1988,7 +1988,7 @@
     )
     (pin "1" (uuid 8e4c0085-1edf-4ebb-a169-a6ca6aef9796))
     (instances
-      (project "divapicoonly_uart_gamepad_board"
+      (project "PD_Arcade_picohub_board"
         (path "/07e2c1ee-0df3-4731-a138-2d4ed34e257e"
           (reference "#PWR0105") (unit 1)
         )
@@ -2021,7 +2021,7 @@
     (pin "3" (uuid c407d958-d891-4b9a-9f49-f69235433141))
     (pin "4" (uuid 8f6548f0-34e9-4b86-a5a0-3392ae268e2e))
     (instances
-      (project "divapicoonly_uart_gamepad_board"
+      (project "PD_Arcade_picohub_board"
         (path "/07e2c1ee-0df3-4731-a138-2d4ed34e257e"
           (reference "J3") (unit 1)
         )
@@ -2047,7 +2047,7 @@
     (pin "1" (uuid 6645af61-8c5a-4a99-be02-c00263104cd9))
     (pin "2" (uuid c2bcf759-71ac-4f67-b9e8-69d01cb91e1a))
     (instances
-      (project "divapicoonly_uart_gamepad_board"
+      (project "PD_Arcade_picohub_board"
         (path "/07e2c1ee-0df3-4731-a138-2d4ed34e257e"
           (reference "J10") (unit 1)
         )
@@ -2072,7 +2072,7 @@
     )
     (pin "1" (uuid 44db4323-6c59-4092-a3e2-df0bdbab2e28))
     (instances
-      (project "divapicoonly_uart_gamepad_board"
+      (project "PD_Arcade_picohub_board"
         (path "/07e2c1ee-0df3-4731-a138-2d4ed34e257e"
           (reference "#PWR0122") (unit 1)
         )
@@ -2103,7 +2103,7 @@
     (pin "1" (uuid dd314a74-0819-4971-b260-4c0ac662e833))
     (pin "2" (uuid 2e6073c5-920a-4801-ad6c-ac67a597d3be))
     (instances
-      (project "divapicoonly_uart_gamepad_board"
+      (project "PD_Arcade_picohub_board"
         (path "/07e2c1ee-0df3-4731-a138-2d4ed34e257e"
           (reference "JP4") (unit 1)
         )
@@ -2128,7 +2128,7 @@
     )
     (pin "1" (uuid c3bbca88-c6eb-4dd7-b947-370cc53b066a))
     (instances
-      (project "divapicoonly_uart_gamepad_board"
+      (project "PD_Arcade_picohub_board"
         (path "/07e2c1ee-0df3-4731-a138-2d4ed34e257e"
           (reference "#PWR01") (unit 1)
         )
@@ -2158,7 +2158,7 @@
     )
     (pin "1" (uuid 16df4130-99a2-40ab-b039-1136a7b35977))
     (instances
-      (project "divapicoonly_uart_gamepad_board"
+      (project "PD_Arcade_picohub_board"
         (path "/07e2c1ee-0df3-4731-a138-2d4ed34e257e"
           (reference "#PWR0111") (unit 1)
         )
@@ -2189,7 +2189,7 @@
     (pin "1" (uuid b028adca-2486-4e54-883a-87488565ccce))
     (pin "2" (uuid 9d008f6f-a2a3-4d35-9e87-c65137e029eb))
     (instances
-      (project "divapicoonly_uart_gamepad_board"
+      (project "PD_Arcade_picohub_board"
         (path "/07e2c1ee-0df3-4731-a138-2d4ed34e257e"
           (reference "R2") (unit 1)
         )
@@ -2214,7 +2214,7 @@
     )
     (pin "1" (uuid f1617135-a3f4-4d10-8028-92bbc2dfc24d))
     (instances
-      (project "divapicoonly_uart_gamepad_board"
+      (project "PD_Arcade_picohub_board"
         (path "/07e2c1ee-0df3-4731-a138-2d4ed34e257e"
           (reference "#PWR0123") (unit 1)
         )
@@ -2246,7 +2246,7 @@
     (pin "2" (uuid aaf3715b-8b2c-4f5a-8de5-d30b48720cad))
     (pin "3" (uuid 39d702f6-160b-400c-8fc4-8acb14024edc))
     (instances
-      (project "divapicoonly_uart_gamepad_board"
+      (project "PD_Arcade_picohub_board"
         (path "/07e2c1ee-0df3-4731-a138-2d4ed34e257e"
           (reference "J7") (unit 1)
         )
@@ -2271,7 +2271,7 @@
     )
     (pin "1" (uuid 432aad3e-0c78-40e0-a94e-a3c76c7b66df))
     (instances
-      (project "divapicoonly_uart_gamepad_board"
+      (project "PD_Arcade_picohub_board"
         (path "/07e2c1ee-0df3-4731-a138-2d4ed34e257e"
           (reference "P14") (unit 1)
         )
@@ -2303,7 +2303,7 @@
     (pin "2" (uuid 767bef47-d4f7-4839-9318-86d3a330f8e0))
     (pin "3" (uuid 79dd41be-e427-4329-afc3-99bebd7d7bda))
     (instances
-      (project "divapicoonly_uart_gamepad_board"
+      (project "PD_Arcade_picohub_board"
         (path "/07e2c1ee-0df3-4731-a138-2d4ed34e257e"
           (reference "J4") (unit 1)
         )
@@ -2328,7 +2328,7 @@
     )
     (pin "1" (uuid 9eb783f7-5a1b-4d3d-bde8-bd005af97d22))
     (instances
-      (project "divapicoonly_uart_gamepad_board"
+      (project "PD_Arcade_picohub_board"
         (path "/07e2c1ee-0df3-4731-a138-2d4ed34e257e"
           (reference "#PWR02") (unit 1)
         )
@@ -2359,7 +2359,7 @@
     (pin "1" (uuid 132c2b1d-5f1c-41d2-853d-d1bd1495b253))
     (pin "2" (uuid 85da0507-31ad-43fa-8e08-e92800bf267b))
     (instances
-      (project "divapicoonly_uart_gamepad_board"
+      (project "PD_Arcade_picohub_board"
         (path "/07e2c1ee-0df3-4731-a138-2d4ed34e257e"
           (reference "JP3") (unit 1)
         )
@@ -2384,7 +2384,7 @@
     )
     (pin "1" (uuid ac9f656b-e5fc-44b7-846c-6c2195bb053a))
     (instances
-      (project "divapicoonly_uart_gamepad_board"
+      (project "PD_Arcade_picohub_board"
         (path "/07e2c1ee-0df3-4731-a138-2d4ed34e257e"
           (reference "#PWR0107") (unit 1)
         )
@@ -2414,7 +2414,7 @@
     )
     (pin "1" (uuid a63c3c54-7c3d-4bec-a4c9-6985cb0fd728))
     (instances
-      (project "divapicoonly_uart_gamepad_board"
+      (project "PD_Arcade_picohub_board"
         (path "/07e2c1ee-0df3-4731-a138-2d4ed34e257e"
           (reference "P12") (unit 1)
         )
@@ -2446,7 +2446,7 @@
     (pin "2" (uuid 32d48e52-e05b-498e-9b62-32cbeddcdd5a))
     (pin "3" (uuid b909a680-4405-4a3f-b454-777928cea55d))
     (instances
-      (project "divapicoonly_uart_gamepad_board"
+      (project "PD_Arcade_picohub_board"
         (path "/07e2c1ee-0df3-4731-a138-2d4ed34e257e"
           (reference "J6") (unit 1)
         )
@@ -2471,7 +2471,7 @@
     )
     (pin "1" (uuid b8a21951-b5db-434a-84cc-4bc5472df863))
     (instances
-      (project "divapicoonly_uart_gamepad_board"
+      (project "PD_Arcade_picohub_board"
         (path "/07e2c1ee-0df3-4731-a138-2d4ed34e257e"
           (reference "#PWR0118") (unit 1)
         )
@@ -2504,7 +2504,7 @@
     (pin "3" (uuid b29e2fb9-f981-4e0f-a5c2-2b11352ab113))
     (pin "4" (uuid 3d5bd72b-b5ae-43f1-b151-2675fc650cfa))
     (instances
-      (project "divapicoonly_uart_gamepad_board"
+      (project "PD_Arcade_picohub_board"
         (path "/07e2c1ee-0df3-4731-a138-2d4ed34e257e"
           (reference "J9") (unit 1)
         )
@@ -2532,7 +2532,7 @@
     (pin "3" (uuid c996ddd5-aa45-4107-8edd-b081f0e5099c))
     (pin "4" (uuid 0c066998-70ab-4cc3-a107-cb40a2292ee2))
     (instances
-      (project "divapicoonly_uart_gamepad_board"
+      (project "PD_Arcade_picohub_board"
         (path "/07e2c1ee-0df3-4731-a138-2d4ed34e257e"
           (reference "J5") (unit 1)
         )
@@ -2557,7 +2557,7 @@
     )
     (pin "1" (uuid 6f8d846f-7ad7-4757-8a69-850011f07bb3))
     (instances
-      (project "divapicoonly_uart_gamepad_board"
+      (project "PD_Arcade_picohub_board"
         (path "/07e2c1ee-0df3-4731-a138-2d4ed34e257e"
           (reference "#PWR0115") (unit 1)
         )
@@ -2587,7 +2587,7 @@
     )
     (pin "1" (uuid 5cd28a7d-20e5-46e4-9332-f7aa33e0d429))
     (instances
-      (project "divapicoonly_uart_gamepad_board"
+      (project "PD_Arcade_picohub_board"
         (path "/07e2c1ee-0df3-4731-a138-2d4ed34e257e"
           (reference "#PWR0104") (unit 1)
         )
@@ -2617,7 +2617,7 @@
     )
     (pin "1" (uuid 60483a52-f800-4938-802e-cac936c894b3))
     (instances
-      (project "divapicoonly_uart_gamepad_board"
+      (project "PD_Arcade_picohub_board"
         (path "/07e2c1ee-0df3-4731-a138-2d4ed34e257e"
           (reference "#PWR0101") (unit 1)
         )
@@ -2648,7 +2648,7 @@
     (pin "1" (uuid ed6e2edd-48cb-41e1-9500-4134fbefea5e))
     (pin "2" (uuid a86c77ed-8057-4c04-b85a-e1a9b773e5b7))
     (instances
-      (project "divapicoonly_uart_gamepad_board"
+      (project "PD_Arcade_picohub_board"
         (path "/07e2c1ee-0df3-4731-a138-2d4ed34e257e"
           (reference "J13") (unit 1)
         )
@@ -2676,7 +2676,7 @@
     (pin "3" (uuid 8e388901-d769-49ef-83db-b78c5852ed4a))
     (pin "4" (uuid 0db71663-7909-4bb8-9ba4-4cfcd3095b72))
     (instances
-      (project "divapicoonly_uart_gamepad_board"
+      (project "PD_Arcade_picohub_board"
         (path "/07e2c1ee-0df3-4731-a138-2d4ed34e257e"
           (reference "J14") (unit 1)
         )
@@ -2704,7 +2704,7 @@
     (pin "3" (uuid edaee606-a862-4699-a0b9-88c1a045935d))
     (pin "4" (uuid 175282e5-d7f5-4e63-822a-f149ee43935e))
     (instances
-      (project "divapicoonly_uart_gamepad_board"
+      (project "PD_Arcade_picohub_board"
         (path "/07e2c1ee-0df3-4731-a138-2d4ed34e257e"
           (reference "J15") (unit 1)
         )
@@ -2730,7 +2730,7 @@
     (pin "1" (uuid e8859055-6188-4986-aeb5-323e12c42e4f))
     (pin "2" (uuid a9ca608f-4fa3-46f2-ba3f-10555117c354))
     (instances
-      (project "divapicoonly_uart_gamepad_board"
+      (project "PD_Arcade_picohub_board"
         (path "/07e2c1ee-0df3-4731-a138-2d4ed34e257e"
           (reference "C1") (unit 1)
         )
@@ -2770,7 +2770,7 @@
     (pin "8" (uuid 6bdc9776-e55e-4178-8abd-6a308e79b59b))
     (pin "9" (uuid dd927430-3224-441a-b95c-e04c69902e9f))
     (instances
-      (project "divapicoonly_uart_gamepad_board"
+      (project "PD_Arcade_picohub_board"
         (path "/07e2c1ee-0df3-4731-a138-2d4ed34e257e"
           (reference "U2") (unit 1)
         )
@@ -2806,7 +2806,7 @@
     (pin "2" (uuid dde014ef-3680-417d-a248-e0fd42036ed5))
     (pin "3" (uuid fd6ae6f7-dee5-43e4-821b-51b6fb6f75e1))
     (instances
-      (project "divapicoonly_uart_gamepad_board"
+      (project "PD_Arcade_picohub_board"
         (path "/07e2c1ee-0df3-4731-a138-2d4ed34e257e"
           (reference "Q1") (unit 1)
         )
@@ -2817,10 +2817,10 @@
   (symbol (lib_id "Transistor_Array:ULN2003") (at 128.9304 149.7838 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9b86e233-0265-4cd4-b28b-48b0a50e9fda)
-    (property "Reference" "U6" (at 128.9304 165.6588 0)
+    (property "Reference" "U3" (at 128.9304 165.1 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "ULN2003" (at 128.9304 168.1988 0)
+    (property "Value" "ULN2003" (at 128.9304 167.64 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Package_DIP:DIP-16_W7.62mm" (at 127.6604 135.8138 0)
@@ -2846,9 +2846,9 @@
     (pin "8" (uuid bfb2f6c5-80b8-44d0-a8fb-0f7da5afa6a0))
     (pin "9" (uuid 1d268863-adbb-4762-961c-0f0f70af192e))
     (instances
-      (project "divapicoonly_uart_gamepad_board"
+      (project "PD_Arcade_picohub_board"
         (path "/07e2c1ee-0df3-4731-a138-2d4ed34e257e"
-          (reference "U6") (unit 1)
+          (reference "U3") (unit 1)
         )
       )
     )
@@ -2871,7 +2871,7 @@
     )
     (pin "1" (uuid 945dc41a-ff3a-4b38-be77-6300889ea9e0))
     (instances
-      (project "divapicoonly_uart_gamepad_board"
+      (project "PD_Arcade_picohub_board"
         (path "/07e2c1ee-0df3-4731-a138-2d4ed34e257e"
           (reference "#PWR0103") (unit 1)
         )
@@ -2887,7 +2887,7 @@
   (symbol (lib_id "Logic_LevelTranslator:TXS0108EPW") (at 172.4406 70.0278 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a63bc031-a3fc-4d42-b484-95d1c2822f78)
-    (property "Reference" "U1" (at 190.2206 68.0719 0)
+    (property "Reference" "U4" (at 190.2206 68.0719 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "TXS0108EPW" (at 177.8 71.12 90)
@@ -2920,9 +2920,9 @@
     (pin "8" (uuid 084f48bd-f314-40fa-8789-208145afc852))
     (pin "9" (uuid bf7d6dad-ff85-4f7f-8dfd-728f819c2cac))
     (instances
-      (project "divapicoonly_uart_gamepad_board"
+      (project "PD_Arcade_picohub_board"
         (path "/07e2c1ee-0df3-4731-a138-2d4ed34e257e"
-          (reference "U1") (unit 1)
+          (reference "U4") (unit 1)
         )
       )
     )
@@ -2946,7 +2946,7 @@
     (pin "1" (uuid 1f31fad0-998d-45fc-b403-48401b1ec7de))
     (pin "2" (uuid 2fa5cd88-e1e8-45ef-84a7-4709853dd82d))
     (instances
-      (project "divapicoonly_uart_gamepad_board"
+      (project "PD_Arcade_picohub_board"
         (path "/07e2c1ee-0df3-4731-a138-2d4ed34e257e"
           (reference "C2") (unit 1)
         )
@@ -2971,7 +2971,7 @@
     )
     (pin "1" (uuid f010cb78-0cea-4799-9a8f-ab6ff8889fa1))
     (instances
-      (project "divapicoonly_uart_gamepad_board"
+      (project "PD_Arcade_picohub_board"
         (path "/07e2c1ee-0df3-4731-a138-2d4ed34e257e"
           (reference "#PWR0110") (unit 1)
         )
@@ -3004,7 +3004,7 @@
     (pin "3" (uuid 338530a9-f819-4942-b1c3-2a5e75360c55))
     (pin "4" (uuid e0d2a7d3-6876-4c25-bd63-4d1704be2d48))
     (instances
-      (project "divapicoonly_uart_gamepad_board"
+      (project "PD_Arcade_picohub_board"
         (path "/07e2c1ee-0df3-4731-a138-2d4ed34e257e"
           (reference "J1") (unit 1)
         )
@@ -3030,7 +3030,7 @@
     (pin "1" (uuid 41a4c217-f097-4762-aec9-1c6e1724f040))
     (pin "2" (uuid a5da5e35-48b3-4e91-97e4-f356a107d335))
     (instances
-      (project "divapicoonly_uart_gamepad_board"
+      (project "PD_Arcade_picohub_board"
         (path "/07e2c1ee-0df3-4731-a138-2d4ed34e257e"
           (reference "J11") (unit 1)
         )
@@ -3056,7 +3056,7 @@
     (pin "1" (uuid 1195524f-369d-4857-b086-97bd0837a743))
     (pin "2" (uuid c3f337bd-e3e1-458d-90c4-a6a707d283bb))
     (instances
-      (project "divapicoonly_uart_gamepad_board"
+      (project "PD_Arcade_picohub_board"
         (path "/07e2c1ee-0df3-4731-a138-2d4ed34e257e"
           (reference "R1") (unit 1)
         )
@@ -3081,7 +3081,7 @@
     )
     (pin "1" (uuid 01d32a2f-2e19-457a-abef-fb4bfc9d1dda))
     (instances
-      (project "divapicoonly_uart_gamepad_board"
+      (project "PD_Arcade_picohub_board"
         (path "/07e2c1ee-0df3-4731-a138-2d4ed34e257e"
           (reference "#PWR0120") (unit 1)
         )
@@ -3113,7 +3113,7 @@
     (pin "2" (uuid 8d5134eb-629e-4d33-8a3e-67f3e089a6d2))
     (pin "3" (uuid 2d0a57ee-b654-4221-8ade-9e235857ef2a))
     (instances
-      (project "divapicoonly_uart_gamepad_board"
+      (project "PD_Arcade_picohub_board"
         (path "/07e2c1ee-0df3-4731-a138-2d4ed34e257e"
           (reference "Q2") (unit 1)
         )
@@ -3138,7 +3138,7 @@
     )
     (pin "1" (uuid af92d5e1-d02f-4565-b1b0-106d8a92ed12))
     (instances
-      (project "divapicoonly_uart_gamepad_board"
+      (project "PD_Arcade_picohub_board"
         (path "/07e2c1ee-0df3-4731-a138-2d4ed34e257e"
           (reference "P11") (unit 1)
         )
@@ -3169,7 +3169,7 @@
     (pin "1" (uuid 06747fc8-b2f2-4b3f-b0d0-b1f7bd7411f2))
     (pin "2" (uuid 65244ff7-8bf0-4e08-8455-cf4af85032b6))
     (instances
-      (project "divapicoonly_uart_gamepad_board"
+      (project "PD_Arcade_picohub_board"
         (path "/07e2c1ee-0df3-4731-a138-2d4ed34e257e"
           (reference "JP2") (unit 1)
         )
@@ -3180,7 +3180,7 @@
   (symbol (lib_id "MCU_RaspberryPi_and_Boards:Pico") (at 173.7859 122.8201 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d7d0a82a-8c6c-42c8-9d43-41bae947dd89)
-    (property "Reference" "U3" (at 171.9072 121.9962 0)
+    (property "Reference" "U1" (at 171.9072 121.9962 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Pico" (at 173.7859 94.8801 0)
@@ -3236,9 +3236,9 @@
     (pin "8" (uuid f2eb5b61-4144-4048-aac3-5b40d7db1fcf))
     (pin "9" (uuid bbe6d8dd-68e3-4b05-b113-b018b6f9bc1b))
     (instances
-      (project "divapicoonly_uart_gamepad_board"
+      (project "PD_Arcade_picohub_board"
         (path "/07e2c1ee-0df3-4731-a138-2d4ed34e257e"
-          (reference "U3") (unit 1)
+          (reference "U1") (unit 1)
         )
       )
     )
@@ -3262,7 +3262,7 @@
     (pin "1" (uuid 825b4807-eb97-4fd2-bc96-be9371463aa9))
     (pin "2" (uuid 73bac352-e3bb-434c-aa1d-d8e79cadcd89))
     (instances
-      (project "divapicoonly_uart_gamepad_board"
+      (project "PD_Arcade_picohub_board"
         (path "/07e2c1ee-0df3-4731-a138-2d4ed34e257e"
           (reference "J12") (unit 1)
         )
@@ -3287,7 +3287,7 @@
     )
     (pin "1" (uuid d07e8d1e-77e3-4e48-9172-976a67934928))
     (instances
-      (project "divapicoonly_uart_gamepad_board"
+      (project "PD_Arcade_picohub_board"
         (path "/07e2c1ee-0df3-4731-a138-2d4ed34e257e"
           (reference "#PWR0109") (unit 1)
         )
@@ -3317,7 +3317,7 @@
     )
     (pin "1" (uuid 1060a006-3065-4a26-b4e1-74d95230a85f))
     (instances
-      (project "divapicoonly_uart_gamepad_board"
+      (project "PD_Arcade_picohub_board"
         (path "/07e2c1ee-0df3-4731-a138-2d4ed34e257e"
           (reference "#PWR0108") (unit 1)
         )
@@ -3347,7 +3347,7 @@
     )
     (pin "1" (uuid 9a1e4b86-89df-4360-8a9e-f6d94971f68f))
     (instances
-      (project "divapicoonly_uart_gamepad_board"
+      (project "PD_Arcade_picohub_board"
         (path "/07e2c1ee-0df3-4731-a138-2d4ed34e257e"
           (reference "#PWR0112") (unit 1)
         )
@@ -3377,7 +3377,7 @@
     )
     (pin "1" (uuid 658f2c5e-a87e-4be7-89d6-0943ab3f061b))
     (instances
-      (project "divapicoonly_uart_gamepad_board"
+      (project "PD_Arcade_picohub_board"
         (path "/07e2c1ee-0df3-4731-a138-2d4ed34e257e"
           (reference "#PWR0121") (unit 1)
         )
@@ -3408,7 +3408,7 @@
     (pin "1" (uuid 2ed742cf-d232-4759-a5d5-27b4536e4eca))
     (pin "2" (uuid 215cd205-d588-47ee-bc5a-654e0b21285e))
     (instances
-      (project "divapicoonly_uart_gamepad_board"
+      (project "PD_Arcade_picohub_board"
         (path "/07e2c1ee-0df3-4731-a138-2d4ed34e257e"
           (reference "J2") (unit 1)
         )
@@ -3435,7 +3435,7 @@
     (pin "2" (uuid a6640509-db43-4035-a951-f5076317c9fa))
     (pin "3" (uuid f35c63ea-c62f-45e0-9d65-d17634131f18))
     (instances
-      (project "divapicoonly_uart_gamepad_board"
+      (project "PD_Arcade_picohub_board"
         (path "/07e2c1ee-0df3-4731-a138-2d4ed34e257e"
           (reference "J8") (unit 1)
         )
@@ -3460,7 +3460,7 @@
     )
     (pin "1" (uuid 33130249-d250-49e9-9563-043337c4ed69))
     (instances
-      (project "divapicoonly_uart_gamepad_board"
+      (project "PD_Arcade_picohub_board"
         (path "/07e2c1ee-0df3-4731-a138-2d4ed34e257e"
           (reference "#PWR0102") (unit 1)
         )
@@ -3490,7 +3490,7 @@
     )
     (pin "1" (uuid e84ae96c-8a7b-4e84-b5d4-d13dd5c4d774))
     (instances
-      (project "divapicoonly_uart_gamepad_board"
+      (project "PD_Arcade_picohub_board"
         (path "/07e2c1ee-0df3-4731-a138-2d4ed34e257e"
           (reference "#PWR0114") (unit 1)
         )
@@ -3520,7 +3520,7 @@
     )
     (pin "1" (uuid 551f9fc6-c725-46d1-a51f-e4b9f350d07d))
     (instances
-      (project "divapicoonly_uart_gamepad_board"
+      (project "PD_Arcade_picohub_board"
         (path "/07e2c1ee-0df3-4731-a138-2d4ed34e257e"
           (reference "P13") (unit 1)
         )
