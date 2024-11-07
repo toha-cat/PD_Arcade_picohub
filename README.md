@@ -4,25 +4,21 @@
 Firmware for Raspberry Pi Pico for use in Hatsune Miku Project DIVA Arcade Future Tone DIY-arcade controller 
 
 Creates two USB-CDC and one HID devices:
+- UART-bridge for connection [LKP](https://github.com/Project-Alpaca/LKP)-slider with [LKP-Serial](https://github.com/Project-Alpaca/LKP-FW) firmware.
+- virtual COM-port that receives the commands for controlling the LEDs. Works in conjunction with the [PD-Arcade-Lights plugin](https://github.com/steelpuxnastik/PD-Arcade-Lights)
+- HID-Gamepad for 5 buttons.
 
-The first creates UART-bridge for connection [LKP](https://github.com/Project-Alpaca/LKP)-Slider with [LKP-Serial](https://github.com/Project-Alpaca/LKP-FW) firmware.
-
-The second disassembles the commands for controlling the LEDs. Works in conjunction with the [PD-Arcade-Lights plugin](https://github.com/steelpuxnastik/PD-Arcade-Lights)
-
-HID-Gamepad for 5 buttons.
+Example of PCB and it's description in [PCB folder](/PCB)
 
 ## Raspberry Pi Pico pin mapping
 ------------------------
 
 | Raspberry Pi Pico GPIO | Function |
 |-------------|-------------|
-| 			[LKP-Slider](https://github.com/Project-Alpaca/LKP) connection				|
-|-------------|-------------|
+| 			**[LKP](https://github.com/Project-Alpaca/LKP)-slider connection**				|
 | GPIO16 (Pin 21)        | UART0 TX |
 | GPIO17 (Pin 22)        | UART0 RX |
-|-------------|-------------|
-| LEDs      |
-|-------------|-------------|
+| **LEDs**      |
 | GPIO2 (Pin 4)          | BTN4 ![Circle](/images/circle.png) LED (Circle) |
 | GPIO3 (Pin 5)          | BTN3 ![Cross](/images/cross.png) LED (Cross) |
 | GPIO4 (Pin 6)          | BTN2 ![Square](/images/square.png) LED (Square) |
@@ -34,9 +30,7 @@ HID-Gamepad for 5 buttons.
 | GPIO10 (Pin 14)        | L LINE R (RGB LED strip)|
 | GPIO11 (Pin 15)        | L LINE G (RGB LED strip)|
 | GPIO15 (Pin 20)        | LED-strip brightness PWM signal source|
-|-------------			|-------------|
-| 			Controls	 			|
-|-------------			|-------------|
+| 			**Controls**	 			|
 | GPIO18 (Pin 24)        |  BTN 1 ![Triangle](/images/triangle.png) (Triangle) |
 | GPIO19 (Pin 25)        |  BTN 2 ![Square](/images/square.png) (Square) |
 | GPIO20 (Pin 26)        |  BTN 3 ![Cross](/images/cross.png) (Cross) |
