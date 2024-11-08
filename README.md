@@ -30,7 +30,7 @@ Example of PCB and it's description in [PCB folder](/PCB)
 | GPIO10 (Pin 14)        | L LINE R (RGB LED strip)|
 | GPIO11 (Pin 15)        | L LINE G (RGB LED strip)|
 | GPIO15 (Pin 20)        | LED-strip brightness PWM signal source|
-| 			**Controls**	 			|
+| **Controls**	 			|
 | GPIO18 (Pin 24)        |  BTN 1 ![Triangle](/images/triangle.png) (Triangle) |
 | GPIO19 (Pin 25)        |  BTN 2 ![Square](/images/square.png) (Square) |
 | GPIO20 (Pin 26)        |  BTN 3 ![Cross](/images/cross.png) (Cross) |
