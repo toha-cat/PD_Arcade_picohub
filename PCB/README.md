@@ -18,3 +18,5 @@
   - 4x `JST XH-03` male connector
   - 6x `JST XH-04` male connector
   - female 2.54 single row headset for `Raspberry Pi Pico`
+  
+  ![PCB assembled](/PCB/images/photo_2024-11-25_15-13-38.jpg)
