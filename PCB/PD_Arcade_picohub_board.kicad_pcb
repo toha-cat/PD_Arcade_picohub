@@ -455,7 +455,7 @@
     (fp_text reference "R1" (at 0 -1.82 -180) (layer "F.SilkS") (tstamp fe22a4ec-245b-488a-a5b7-bf5383b7cfcb)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value "10k" (at 0 1.82 -180) (layer "F.Fab") (tstamp c2bfeee5-0980-40dd-b41e-2e11318c458e)
+    (fp_text value "1k" (at 0 1.82 -180) (layer "F.Fab") (tstamp c2bfeee5-0980-40dd-b41e-2e11318c458e)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -0.727064 0.91) (end 0.727064 0.91)

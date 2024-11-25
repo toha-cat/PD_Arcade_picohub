@@ -10,7 +10,8 @@
 - Parts for PWM brightness control (short jumpers if no PWM used, **brightness control will not work**):
   - Q1: `IRFR9024N` P-channel MOSFET
   - Q2: `AO3404A` N-channel MOSFET
-  - R1, R2: `10k` 1206 SMD resistor
+  - R1: `1k` 1206 SMD resistor
+  - R2: `10k` 1206 SMD resistor
 - connectors:
   - 2x DIP-16 panel for `ULN2003`
   - 5x `JST XH-02` male connector
