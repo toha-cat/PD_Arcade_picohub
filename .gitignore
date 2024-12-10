@@ -12,3 +12,6 @@ build.ninja
 pico_flash_region.ld
 PCB/PD_Arcade_picohub_board.kicad_sch-bak
 PCB/PD_Arcade_picohub_board-backups/*
+.vscode/c_cpp_properties.json
+.vscode/launch.json
+.vscode/settings.json
